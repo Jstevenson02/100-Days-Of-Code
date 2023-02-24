@@ -17,39 +17,26 @@
         <script src='blackjack.js'></script>
     </head>
 
-    <body class='bg-dark'>
-        <div class="container ">
+    <body>
+        <h2>Dealer <span id='dealer-sum'></span></h2>
+        <div id='dealer-cards'>
+            <img id='hidden'
+                 src="
+                 ./images/BACK.png"
+                 alt="backcard">
+        </div>
+        <h2>You <span id="your-sum"></span></h2>
+        <div id="your-cards">
+        </div>
+        <button id='hit'
+                type='button'
+                class="btn btn-success btn-lg">Hit</button>
 
-            <div class="players">
-                <h2>Dealer <span class='dealer-sum'></span></h2>
-            </div>
-            <div class="dealer-cards container-fluid">
-                <div class="row">
-                    <img src="./images/BACK.png"
-                         alt="backcard">
-                    <img src="./images/10-D.png"
-                         alt="backcard">
-                </div>
-            </div>
-            <div class="players">
-                <h2>You <span class="your-sum"></span></h2>
-            </div>
-            <div class="your-cards">
-                <div class="row">
+        <button id='stay'
+                type='button'>Stay</button>
 
-                    <img src="./images/BACK.png"
-                         alt="backcard">
-                    <img src="./images/3-D.png"
-                         alt="backcard">
-                </div>
-            </div>
-            <div class="game">
-                <button type='button'
-                        class="btn btn-danger hit">Hit</button>
-
-                <button class="btn btn-success stay">Stay</button>
-                <p class="results"></p>
-            </div>
+        <p id="results"></p>
+        </div>
         </div>
     </body>
 
