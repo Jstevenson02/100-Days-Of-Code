@@ -38,6 +38,10 @@ function shuffleDeck() {
     }
 }
 
+function replay() {
+    location.reload();
+}
+
 function startGame() {
     hidden = deck.pop();
     dealerSum += getValue(hidden);
@@ -68,8 +72,7 @@ function startGame() {
     document.getElementById('hit').addEventListener("click", hit);
     document.getElementById('stay').addEventListener("click", stay);
     document.getElementById("your-sum").innerText = yourSum;
-    document.getElementById('dealer-sum').innerText = dealerSum;
-
+    document.getElementById('replay').addEventListener("click", replay);
 }
 
 function hit() {
@@ -89,7 +92,6 @@ function hit() {
     }
 
     document.getElementById("your-sum").innerText = yourSum;
-    document.getElementById('dealer-sum').innerText = dealerSum;
     document.getElementById('results').innerText = message;
 }
 
