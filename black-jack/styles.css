@@ -5,14 +5,24 @@
     outline: none;
     justify-content: center;
     align-items: center;
-}
-
-h2 {
-    color: #fff;
+    color: white;
 }
 
 body {
     height: 100vh;
+}
+
+.container {
+    padding-top: 55px;
+}
+
+#main-card {
+    background-color: #3d444b
+}
+
+#button-card {
+    background-color: #343A40;
+    margin-top: 15px;
 }
 
 #dealer-cards img {

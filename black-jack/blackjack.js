@@ -1,3 +1,5 @@
+
+
 var dealerSum = 0;
 var yourSum = 0;
 
